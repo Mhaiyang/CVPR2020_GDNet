@@ -31,6 +31,8 @@ See [Peoject Page](https://mhaiyang.github.io/CVPR2020_GDNet/index.html)
 * Setup
 ```
 sudo pip3 install -r requirements.txt
+git clone https://github.com/Mhaiyang/dss_crf.git
+sudo python setup.py install
 ```
 
 ### Test
