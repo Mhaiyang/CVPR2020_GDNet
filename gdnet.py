@@ -274,7 +274,7 @@ class GDNet(nn.Module):
         self.h2l = nn.ConvTranspose2d(896, 1, 8, 4, 2)
 
         # final fusion
-        self.h_up = nn.ConvTranspose2d(896, 256, 8, 4, 2)
+        self.h_up_for_final_fusion = nn.ConvTranspose2d(896, 256, 8, 4, 2)
         self.final_fusion = CBAM(320)
         self.final_fusion_conv = nn.Sequential(nn.Conv2d(320, 320, 3, 1, 1), nn.BatchNorm2d(320), nn.ReLU())
 
@@ -312,8 +312,8 @@ class GDNet(nn.Module):
         l_fusion = F.sigmoid(h2l) * l_fusion
 
         # final fusion
-        h_up = self.h_up(h_fusion)
-        final_fusion = self.final_fusion(torch.cat((h_up, l_fusion), 1))
+        h_up_for_final_fusion = self.h_up_for_final_fusion(h_fusion)
+        final_fusion = self.final_fusion(torch.cat((h_up_for_final_fusion, l_fusion), 1))
         final_fusion = self.final_fusion_conv(final_fusion)
 
         # h predict

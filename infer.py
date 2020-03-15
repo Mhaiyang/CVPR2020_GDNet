@@ -18,7 +18,7 @@ from PIL import Image
 from torch.autograd import Variable
 from torchvision import transforms
 
-from config import gdd_testing_root
+from config import gdd_testing_root, gdd_results_root
 from misc import check_mkdir, crf_refine
 from gdnet import GDNet
 
@@ -62,7 +62,7 @@ def main():
             start = time.time()
             for idx, img_name in enumerate(img_list):
                 print('predicting for {}: {:>4d} / {}'.format(name, idx + 1, len(img_list)))
-                check_mkdir(os.path.join(ckpt_path, exp_name, '%s_%s' % (exp_name, args['snapshot'])))
+                check_mkdir(os.path.join(gdd_results_root, '%s_%s' % (exp_name, args['snapshot'])))
                 img = Image.open(os.path.join(root, 'image', img_name))
                 if img.mode != 'RGB':
                     img = img.convert('RGB')
