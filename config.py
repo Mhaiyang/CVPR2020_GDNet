@@ -13,3 +13,7 @@ backbone_path = '/home/iccd/CVPR2020_GDNet/backbone/resnext/resnext_101_32x4d.pt
 gdd_training_root = "/home/iccd/CVPR2020_GDNet/GDD/train"
 gdd_testing_root = "/home/iccd/CVPR2020_GDNet/GDD/test"
 gdd_results_root = "/home/iccd/CVPR2020_GDNet/results"
+
+msd_training_root = "/home/iccd/CVPR2020_GDNet/MSD/train"
+msd_testing_root = "/home/iccd/CVPR2020_GDNet/MSD/test"
+msd_results_root = "/home/iccd/CVPR2020_GDNet/results"

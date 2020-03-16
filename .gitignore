@@ -1,5 +1,4 @@
 /backbone/resnext/resnext_101_32x4d.pth
-/ckpt/GDNet/200.pth
 /GDD/
 /results/
 /joint_transforms.py
@@ -7,3 +6,5 @@
 /train.py
 /evaluation.py
 /excel/
+/MSD/
+/ckpt/
