@@ -2,3 +2,6 @@
 /ckpt/GDNet/200.pth
 /GDD/
 /results/
+/joint_transforms.py
+/loss.py
+/train.py
