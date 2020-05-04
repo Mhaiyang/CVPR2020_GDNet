@@ -33,7 +33,7 @@ class ImageFolder(data.Dataset):
     def __getitem__(self, index):
         img_path, gt_path = self.imgs[index]
         img = Image.open(img_path).convert('RGB')
-        target = Image.open(gt_path)
+        target = Image.open(gt_path).convert('L')
         if self.joint_transform is not None:
             img, target = self.joint_transform(img, target)
         if self.img_transform is not None:
