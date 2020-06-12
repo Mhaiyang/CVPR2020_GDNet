@@ -1,7 +1,7 @@
 # CVPR2020_GDNet
 
 ## Don't Hit Me! Glass Detection in Real-world Scenes
-[Haiyang Mei](https://mhaiyang.github.io/)\* et al.
+[Haiyang Mei](https://mhaiyang.github.io/), Xin Yang, Yang Wang, Yuanyuan Liu, Shengfeng He, Qiang Zhang, Xiaopeng Wei, and Rynson W.H. Lau
 
 [[Project Page](https://mhaiyang.github.io/CVPR2020_GDNet/index.html)]
 
@@ -12,10 +12,10 @@ Glass is very common in our daily life. Existing computer vision systems neglect
 If you use this code or our dataset (including test set), please cite:
 
 ```
-@InProceedings{Yang_2019_ICCV,
+@InProceedings{Mei_2020_CVPR,
     author = {Mei, Haiyang and Yang, Xin and Wang, Yang and Liu, Yuanyuan and He, Shengfeng and Zhang, Qiang and Wei, Xiaopeng and Lau, Rynson W.H.},
-    title = {Don't Hit Me! Glass Detection in Real-world Scenes},
-    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    title = {Don't Hit Me! Glass Detection in Real-World Scenes},
+    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month = {June},
     year = {2020}
 }
