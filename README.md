@@ -36,7 +36,7 @@ sudo python setup.py install
 ```
 
 ### Test
-Download trained model `GDNet.pth` at [here](https://mhaiyang.github.io/CVPR2020_GDNet/index.html), then run `infer.py`.
+Download the `resnext_101_32x4d.pth` at [here](https://drive.google.com/file/d/1e7N7LLZFWX4z0AkMG9wSQDCkOZEaSuFa/view?usp=sharing) and the trained model `GDNet.pth` at [here](https://mhaiyang.github.io/CVPR2020_GDNet/index.html), then run `infer.py`.
 
 <!-- ### Experimental Results -->
 
